@@ -1,12 +1,11 @@
 import { Link, useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { API_KEY } from '../../config/key';
+import { API_KEY, image_path} from '../../config/api';
 import { Container } from './styles';
 
 function Details() {
 
     const { id } = useParams()
-    const image_path = "https://image.tmdb.org/t/p/w500"
     const [movie, setMovie] = useState([])
 
     useEffect(() => {

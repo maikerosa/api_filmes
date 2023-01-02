@@ -1,12 +1,11 @@
 import { Container, MovieList, Movie } from "./styles"
 import {useState, useEffect} from "react"
-import { API_KEY } from "../../config/key"
+import { API_KEY, image_path } from "../../config/api"
 import {Link} from "react-router-dom"
 
 function Home() {
 
     const [movies, setMovies] = useState([])
-    const image_path = "https://image.tmdb.org/t/p/w500"
 
     useEffect(() => {
         
